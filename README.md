@@ -1,0 +1,1 @@
+# namaz.github.io
