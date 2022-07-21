@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.namazvakitleri.internetsiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.namazvakitleri.internetsiz.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/simge"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/simge"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true"
+        >
+
+
+
+        <activity
+            android:name="com.namazvakitleri.internetsiz.ui.activity.praytimeupdateinfo.PrayTimeUpdateInfoActivity"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        <activity android:name="com.namazvakitleri.internetsiz.ui.activity.remindingsettings.RemindingSettingActivity" />
+        <!--
+             <receiver android:name=".widget.PrayTimeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/pray_time_widget_info" />
+        </receiver>
+        -->
+        <activity
+            android:name="com.namazvakitleri.internetsiz.ui.activity.information.InformationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.namazvakitleri.internetsiz.main.Kible"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.namazvakitleri.internetsiz.main.Zikirmatik"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.namazvakitleri.internetsiz.ui.activity.error.ErrorActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.namazvakitleri.internetsiz.ui.activity.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.namazvakitleri.internetsiz.ui.activity.region.RegionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7606889687434673~7823446630" />
+        <activity
+            android:name="com.namazvakitleri.internetsiz.main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+
+        <receiver
+            android:name="com.namazvakitleri.internetsiz.receiver.AlarmReceiver"
+            android:process=":remote" />
+        <receiver
+            android:name="com.namazvakitleri.internetsiz.receiver.BootAlarmReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" /> <!-- telefon kapanirsa ya da yeniden baslarsa. -->
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.TIME_SET" /> <!-- telefon saati degisirse. -->
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.namazvakitleri.internetsiz.service.WidgetService" />
+        <service android:name="com.namazvakitleri.internetsiz.service.NotificationService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#14262B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Namaz Alarmı"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-1dp"
+        android:background="@android:color/transparent"
+        android:text="KAYDET"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView28"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/imsak_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/imsak_img"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_toEndOf="@+id/imsak_img"
+                            android:text="İmsak"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/imsak_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginStart="20dp"
+                            app:srcCompat="@drawable/icon_reminder" />
+
+                        <TextView
+                            android:id="@+id/imsak_hatirlatma_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imsak_txt"
+                            android:layout_alignStart="@+id/imsak_txt"
+                            android:layout_marginStart="-1dp"
+                            android:gravity="center_vertical"
+                            android:text="Hatırlatma"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:autoSizeTextType="none" />
+
+                        <Spinner
+                            android:id="@+id/imsak_spn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            android:layout_toStartOf="@+id/imsak_sw"
+                            android:background="@drawable/custom_spinner"
+                            android:entries="@array/time"
+                            android:paddingVertical="7dp"
+                            android:popupBackground="#1E3841"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/spinnerTheme" />
+
+                        <Switch
+                            android:id="@+id/imsak_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="25dp"
+                            android:thumb="@drawable/custom_switch"
+                            android:track="@drawable/switch_track"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/gunes_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/gunes_img"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_toEndOf="@+id/gunes_img"
+                            android:text="Güneş"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/gunes_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginStart="20dp"
+                            app:srcCompat="@drawable/icon_reminder" />
+
+                        <TextView
+                            android:id="@+id/gunes_hatirlatma_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/gunes_txt"
+                            android:layout_alignStart="@+id/gunes_txt"
+                            android:layout_marginStart="-1dp"
+                            android:gravity="center_vertical"
+                            android:text="Hatırlatma"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:autoSizeTextType="none" />
+
+                        <Spinner
+                            android:id="@+id/gunes_spn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            android:layout_toStartOf="@+id/gunes_sw"
+                            android:background="@drawable/custom_spinner"
+                            android:entries="@array/time"
+                            android:paddingVertical="7dp"
+                            android:popupBackground="#1E3841"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/spinnerTheme" />
+
+                        <Switch
+                            android:id="@+id/gunes_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="25dp"
+                            android:thumb="@drawable/custom_switch"
+                            android:track="@drawable/switch_track"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/ogle_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ogle_img"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_toEndOf="@+id/ogle_img"
+                            android:text="Öğle"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ogle_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginStart="20dp"
+                            app:srcCompat="@drawable/icon_reminder" />
+
+                        <TextView
+                            android:id="@+id/ogle_hatirlatma_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ogle_txt"
+                            android:layout_alignStart="@+id/ogle_txt"
+                            android:layout_marginStart="-1dp"
+                            android:gravity="center_vertical"
+                            android:text="Hatırlatma"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:autoSizeTextType="none" />
+
+                        <Spinner
+                            android:popupBackground="#1E3841"
+                            android:id="@+id/ogle_spn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingVertical="7dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_toStartOf="@+id/ogle_sw"
+                            android:background="@drawable/custom_spinner"
+                            android:entries="@array/time"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/spinnerTheme" />
+
+                        <Switch
+                            android:id="@+id/ogle_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="25dp"
+                            android:thumb="@drawable/custom_switch"
+                            android:track="@drawable/switch_track"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/ikindi_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/ikindi_img"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_toEndOf="@+id/ikindi_img"
+                            android:text="İkindi"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/ikindi_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginStart="20dp"
+                            app:srcCompat="@drawable/icon_reminder" />
+
+                        <TextView
+                            android:id="@+id/ikindi_hatirlatma_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ikindi_txt"
+                            android:layout_alignStart="@+id/ikindi_txt"
+                            android:layout_marginStart="-1dp"
+                            android:gravity="center_vertical"
+                            android:text="Hatırlatma"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:autoSizeTextType="none" />
+
+                        <Spinner
+                            android:popupBackground="#1E3841"
+                            android:id="@+id/ikindi_spn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            android:paddingVertical="7dp"
+                            android:layout_toStartOf="@+id/ikindi_sw"
+                            android:background="@drawable/custom_spinner"
+                            android:entries="@array/time"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/spinnerTheme" />
+
+                        <Switch
+                            android:id="@+id/ikindi_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="25dp"
+                            android:thumb="@drawable/custom_switch"
+                            android:track="@drawable/switch_track"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/aksam_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/aksam_img"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_toEndOf="@+id/aksam_img"
+                            android:text="Akşam"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/aksam_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginStart="20dp"
+                            app:srcCompat="@drawable/icon_reminder" />
+
+                        <TextView
+                            android:id="@+id/aksam_hatirlatma_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/aksam_txt"
+                            android:layout_alignStart="@+id/aksam_txt"
+                            android:layout_marginStart="-1dp"
+                            android:gravity="center_vertical"
+                            android:text="Hatırlatma"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:autoSizeTextType="none" />
+
+                        <Spinner
+                            android:popupBackground="#1E3841"
+                            android:id="@+id/aksam_spn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:paddingVertical="7dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_toStartOf="@+id/aksam_sw"
+                            android:background="@drawable/custom_spinner"
+                            android:entries="@array/time"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/spinnerTheme" />
+
+                        <Switch
+                            android:id="@+id/aksam_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="25dp"
+                            android:thumb="@drawable/custom_switch"
+                            android:track="@drawable/switch_track"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/yatsi_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/yatsi_img"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="-8dp"
+                            android:layout_marginEnd="3dp"
+                            android:layout_toEndOf="@+id/yatsi_img"
+                            android:text="Yatsı"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/yatsi_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginStart="20dp"
+                            app:srcCompat="@drawable/icon_reminder" />
+
+                        <TextView
+                            android:id="@+id/yatsi_hatirlatma_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/yatsi_txt"
+                            android:layout_alignStart="@+id/yatsi_txt"
+                            android:layout_marginStart="-1dp"
+                            android:gravity="center_vertical"
+                            android:text="Hatırlatma"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            app:autoSizeTextType="none" />
+
+                        <Spinner
+                            android:popupBackground="#1E3841"
+                            android:id="@+id/yatsi_spn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="30dp"
+                            android:layout_toStartOf="@+id/yatsi_sw"
+                            android:background="@drawable/custom_spinner"
+                            android:entries="@array/time"
+                            android:paddingVertical="7dp"
+                            android:spinnerMode="dropdown"
+                            android:theme="@style/spinnerTheme" />
+
+                        <Switch
+                            android:id="@+id/yatsi_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="25dp"
+                            android:thumb="@drawable/custom_switch"
+                            android:track="@drawable/switch_track"
+                            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/notification_sound_cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            app:srcCompat="@drawable/information" />
+
+                        <TextView
+                            android:id="@+id/textView26"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_toEndOf="@+id/imageView14"
+                            android:text="Hatırlatma Sesi"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"
+                            app:srcCompat="@drawable/icon_right" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:paddingVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/imageView1401"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            app:srcCompat="@drawable/information" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_toEndOf="@+id/imageView1401"
+                            android:text="Ezan Vaktinden kaç dakika önce hatırlatmasını istiyorsanız vaktinde üzerine basıp zamanı seçip kaydet tıklayınız."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    app:cardBackgroundColor="#26444E"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:paddingVertical="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ImageView
+                            android:id="@+id/imageView1400"
+                            android:layout_width="40dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/information" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_toEndOf="@+id/imageView1400"
+                            android:text="Hatırlatıcı sesini yani ezan sesi olarak ayarlamak için hatırlatma sesi kısmına tıklayıp ezan seçlerini seçip kaydet tıklayınız."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

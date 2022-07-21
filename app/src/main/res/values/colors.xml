@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorGray">#657E79</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="regionFragmentsColor">#35414f</color>
+    <color name="prayNameColor">#7E3518</color>
+    <color name="editText">#3e4854</color>
+    <color name="mainPrayTimeText">#FFF</color>
+    <color name="generalTextColor">#819C81</color>
+    <color name="iconColor">#45B1A2</color>
+    <color name="reminderColor">#63CD57</color>
+    <color name="widgetTextColor">#FFF</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="gray">#808080</color>
+    <color name="White">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="mushaf2">#eeeade</color>
+    <color name="mushaf3">#ede6d3</color>
+    <color name="mushaf4">#ddcca2</color>
+    <color name="mushaf5">#dcd69c</color>
+    <color name="clearWhite">#ECEFF1</color>
+    <color name="fab_color_pressed">#007787</color>
+    <color name="style_color_primary">#16A48C</color>
+
+
+    <color name="originalColor">#D7DDD7</color>
+    <color name="clickColor">#819C81</color>
+</resources>

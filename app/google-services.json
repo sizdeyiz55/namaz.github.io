@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "173710716537",
+    "project_id": "namazvakti-d2d95",
+    "storage_bucket": "namazvakti-d2d95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173710716537:android:27fdd0ee2dbebe3c022ea8",
+        "android_client_info": {
+          "package_name": "com.namazvakitleri.internetsiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173710716537-rfrnahbjlgbpo0avuu6cknmjbho4rhd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3lH1yA9Z1SJRePViw13PcdwCtOcEx7KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173710716537-rfrnahbjlgbpo0avuu6cknmjbho4rhd4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

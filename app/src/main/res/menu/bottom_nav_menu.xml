@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/bttm_icon_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_salaryPrayTime"
+        android:icon="@drawable/icon_bottom_time"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_reminder"
+        android:icon="@drawable/bttm_reminder_icom"
+        android:title="Reminder" />
+
+    <item
+        android:id="@+id/navigation_religiousDayNights"
+        android:icon="@drawable/bttm_religiousdays_icon"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_imsakiye"
+        android:icon="@drawable/bttm_imsakiye_icon"
+        android:title="Reminder" />
+
+</menu>

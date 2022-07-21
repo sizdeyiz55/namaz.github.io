@@ -1,0 +1,236 @@
+<resources>
+    <string name="app_name">Namaz Vakitleri</string>
+    <string name="title_home">Vakitler</string>
+    <string name="title_dashboard">Ayarlar</string>r
+    <string name="title_notifications">Notifications</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-1462895999337541/2746927192</string>
+    <string name="interstitial_ad_unit_id_test">ca-app-pub-3940256099942544/1033173712</string>
+
+    <string name="information">Uygulamada kullanılan bütün lokasyonlar ve namaz vakitleri<!--<font fgcolor='#FFFF3B30'> </font>-->
+        DİYANET İŞLERİ BAŞKANLIĞI\'nın
+     sağlamış olduğu verilerden alınmaktadır. Lokasyon seçimi yaparken bulunduğunuz lokasyon listede bulunmuyorsa bu uygulamadan kaynaklanan
+     bir durum değildir. Anlayışınız için teşekkür ederiz.
+     Lütfen uygulamayı kullanırken tarih ve saatinizin güncel olduğundan emin olunuz. </string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="loading">Yükleniyor</string>
+    <string name="UPPERYES">EVET</string>
+    <string name="UPPERNO">HAYIR</string>
+    <string name="cancel">İptal</string>
+    <string name="apply">Uygula</string>
+    <string name="downloadLanguagePAck">Dil paketi yüklensin mi?</string>
+    <string name="translationLanguage">Meal dili</string>
+    <string name="language">Dil</string>
+    <string name="viewOptions">Gösterim Seçenekleri</string>
+    <string name="showTransliteration">Okunuşu Göster</string>
+    <string name="showTranslation">Meali Göster</string>
+    <string name="textOptions">Metin Ayarları</string>
+    <string name="fontArabic">Arapça yazı tipi</string>
+    <string name="fontSizeArabic">Arapça metin boyutu</string>
+    <string name="fontSizeTransliteration">Okunuş metin boyutu</string>
+    <string name="fontSizeTranslation">Meal metin boyutu</string>
+    <string name="letterA">A</string>
+    <string name="arabicWord">بِسْــمِ اﷲِارَّحْمَنِ ارَّحِيم</string>
+    <string name="transliterationWord">Bismillahirrahmanirrahîm</string>
+    <string name="translationWord">Rahman ve Rahim Olan Allah’ın Adı ile</string>
+
+
+    <string name="reminding_setting_info">Namaz vakitlerinde bildirim alamıyorsanız lütfen
+         sırayla aşağıdaki adımları gerçekleştiriniz.</string>
+
+    <string name="quran">Kuran</string>
+
+
+    <string name="CUMA_BACK_IMAGE">Arkaplan resim</string>
+    <string name="CUMA_DUZ_TEMA">Düz tema</string>
+    <string name="CUMA_HAZIR_MESSAGE">Hazır mesaj</string>
+    <string name="CUMA_MSG_COLOR">Mesaj rengi</string>
+    <string name="CUMA_MSG_SIZE">Mesaj boyutu</string>
+    <string name="CUMA_MSG_KENDIN_YAZ">Kendin yaz</string>
+    <string name="CONTINUE">Devam et</string>
+    <string name="DELETE">Sil</string>
+    <string name="ayah">Ayet</string>
+
+    <string-array name="translation_list">
+        <item>quran_original.json</item>
+        <item>quran_simple_clean.json</item>
+        <item>quran_tajweed.json</item>
+        <item>quran_translation_list.json</item>
+        <item>quran_translation_tr_diyanet.json</item>
+        <item>quran_transliteration_en.json</item>
+        <item>quran_transliteration_tr.json</item>
+        <item>quran_uthmani.json</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>Vaktinde</item>
+        <item>15 dk. önce</item>
+        <item>30 dk. önce</item>
+        <item>45 dk. önce</item>
+    </string-array>
+
+    <string name="pray_time_update_info">Görünüşe göre aylık namaz vakitleriniz bitmiş. :) Uygulamayı çevrimdışı kullanabilmeniz için
+        aylık olarak vakitlerinizi güncelliyoruz. Vakitleri güncellemek için aşağıdaki butona tıklayabilirsiniz.
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="reminder">Hatırlatma ayarlarınızı yaptıktan sonra kaydetmeyi unutmayın.  </string>
+    <string name="share_app">Namaz Vakti Uygulamasını İndirmek İçin Linke Tıkla!</string>
+
+    <string name="default_hadis">Allah sizin ne dış görünüşünüze ne de mallarınıza bakar. Ama O, sizin kalplerinize ve işlerinize bakar.</string>
+    <string name="default_hadis_number">(Muslim, “Birr”,34; Ibn Majah, “Zühd”, 9)</string>
+
+    <string name="default_ayet">Biz onu Kadir Gecesi indirdik. Kadir Gecesi nedir, bilir misin sen? Kadir Gecesi bin aydan hayırlıdır. Meleklerle Ruh o gece Rablerinin izniyle her iş için iner de iner. Tam bir esenliktir o gece, tâ tan yeri ağarıncaya kadar.</string>
+    <string name="default_ayet_number">(Kadîr sûresi, 1,5)</string>
+
+    <string name="default_dua">Allah ım! İşlerimin ölçüsü olan imanımı ıslah eyle. Yaşamımı sürdürdüğüm dünyamı iyi bir yer eyle. Dönüş yerim olan ahiretimi benim için iyi bir yer eyle.</string>
+    <string name="default_dua_number">(Müslime, "Zikir", 71)</string>
+
+
+    <string-array name="arabic_font">
+        <item>Amiri</item>
+        <item>Me Quran</item>
+        <item>Noorehira</item>
+        <item>PDMS Islamic</item>
+        <item>PDMS Quran</item>
+        <item>Scheherazade</item>
+        <item>Uthmani</item>
+        <item>Uthmani Ver12</item>
+    </string-array>
+
+    <array name="surah_name">
+        <item>Fâtiha Sûresi</item>
+        <item>Bakara Sûresi</item>
+        <item>Al-i İmran Suresi</item>
+        <item>Nisa Suresi</item>
+        <item>Maide Suresi</item>
+        <item>En’am Suresi</item>
+        <item>A’raf Suresi</item>
+        <item>Enfal Suresi</item>
+        <item>Tevbe Suresi</item>
+        <item>Yunus Suresi</item>
+        <item>Hud Suresi</item>
+        <item>Yusuf Suresi</item>
+        <item>Ra’d Suresi</item>
+        <item>İbrahim Suresi</item>
+        <item>Hicr Suresi</item>
+        <item>Nahl Suresi</item>
+        <item>İsra Suresi</item>
+        <item>Kehf Suresi</item>
+        <item>Meryem Suresi</item>
+        <item>Taha Suresi</item>
+        <item>Enbiya Suresi</item>
+        <item>Hac Suresi</item>
+        <item>Mü’minun Suresi</item>
+        <item>Nur Suresi</item>
+        <item>Furkan Suresi</item>
+        <item>Şuara Suresi</item>
+        <item>Neml Suresi</item>
+        <item>Kasas Suresi</item>
+        <item>Ankebut Suresi</item>
+        <item>Rum Suresi</item>
+        <item>Lokman Suresi</item>
+        <item>Secde Suresi</item>
+        <item>Ahzab Suresi</item>
+        <item>Sebe Suresi</item>
+        <item>Fatır Suresi</item>
+        <item>Yasin Suresi</item>
+        <item>Saffat Suresi</item>
+        <item>Sad Suresi</item>
+        <item>Zümer Suresi</item>
+        <item>Ğafir (Mü’min) Suresi</item>
+        <item>Fussilet Suresi</item>
+        <item>Şura Suresi</item>
+        <item>Zuhruf Suresi</item>
+        <item>Duhan Suresi</item>
+        <item>Casiye Suresi</item>
+        <item>Ahkaf Suresi</item>
+        <item>Muhammed Suresi</item>
+        <item>Fetih Suresi</item>
+        <item>Hucurat Suresi</item>
+        <item>Kaf Suresi</item>
+        <item>Zariyat Suresi</item>
+        <item>Tur Suresi</item>
+        <item>Necm Suresi</item>
+        <item>Kamer Suresi</item>
+        <item>Rahman Suresi</item>
+        <item>Vakia Suresi</item>
+        <item>Hadid Suresi</item>
+        <item>Mücadele Suresi</item>
+        <item>Haşr Suresi</item>
+        <item>Mümtehine Suresi</item>
+        <item>Saf Suresi</item>
+        <item>Cuma Suresi</item>
+        <item>Münafikun Suresi</item>
+        <item>Teğabun Suresi</item>
+        <item>Talak Suresi</item>
+        <item>Tahrim Suresi</item>
+        <item>Mülk Suresi</item>
+        <item>Kalem Suresi</item>
+        <item>Hakka Suresi</item>
+        <item>Mearic Suresi</item>
+        <item>Nuh Suresi</item>
+        <item>Cin Suresi</item>
+        <item>Müzzemmil Suresi</item>
+        <item>Müddessir Suresi</item>
+        <item>Kıyamet Suresi</item>
+        <item>İnsan Suresi</item>
+        <item>Mürselat Suresi</item>
+        <item>Nebe Suresi</item>
+        <item>Naziat Suresi</item>
+        <item>Abese Suresi</item>
+        <item>Tekvir Suresi</item>
+        <item>İnfitar Suresi</item>
+        <item>Mutaffifin Suresi</item>
+        <item>İnşikak Suresi</item>
+        <item>Buruc Suresi</item>
+        <item>Tarık Suresi</item>
+        <item>A’la Suresi</item>
+        <item>Ğaşiye Suresi</item>
+        <item>Fecr Suresi</item>
+        <item>Beled Suresi</item>
+        <item>Şems Suresi</item>
+        <item>Leyl Suresi</item>
+        <item>Duha Suresi</item>
+        <item>İnşirah (Şerh) Suresi</item>
+        <item>Tin Suresi</item>
+        <item>Alak Suresi</item>
+        <item>Kadir Suresi</item>
+        <item>Beyyine Suresi</item>
+        <item>Zilzal (Zelzele) Suresi</item>
+        <item>Adiyat Suresi</item>
+        <item>Karia Suresi</item>
+        <item>Tekasür Suresi</item>
+        <item>Asr Suresi</item>
+        <item>Hümeze Suresi</item>
+        <item>Fil Suresi</item>
+        <item>Kureyş Suresi</item>
+        <item>Maun Suresi</item>
+        <item>Kevser Suresi</item>
+        <item>Kafirun Suresi</item>
+        <item>Nasr Suresi</item>
+        <item>Mesed Suresi</item>
+        <item>İhlas Suresi</item>
+        <item>Felak Suresi</item>
+        <item>Nas Suresi</item>
+    </array>
+
+
+    <string-array name="arabic_font_code">
+        <item>amiri.ttf</item>
+        <item>me_quran.ttf</item>
+        <item>noorehira.ttf</item>
+        <item>PDMS_IslamicFont.ttf</item>
+        <item>PDMS_Saleem_QuranFont.ttf</item>
+        <item>Scheherazade-Regular.ttf</item>
+        <item>Uthmani.otf</item>
+        <item>uthmanic_hafs_ver12.otf</item>
+    </string-array>
+
+    <string name="ADMOB_APP_ID">ca-app-pub-1462895999337541~8334898432</string>
+    <string name="ADMOB_BANNER_AD_UNIT_ID">ca-app-pub-1462895999337541/5708735090</string>
+    <string name="ADMOB_INTERSITITIAL_AD_UNIT_ID">ca-app-pub-1462895999337541/2746927192</string>
+
+
+</resources>
